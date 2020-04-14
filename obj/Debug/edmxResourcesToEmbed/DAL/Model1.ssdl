@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="online_shoppingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tbl_AdminLogin">
+    <Key>
+      <PropertyRef Name="Admin_id" />
+    </Key>
+    <Property Name="Admin_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Admin_UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Admin_Password" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_Cart">
+    <Key>
+      <PropertyRef Name="cartID" />
+    </Key>
+    <Property Name="cartID" Type="int" Nullable="false" />
+    <Property Name="productID" Type="int" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="cartStatusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Tbl_CartStatus">
+    <Key>
+      <PropertyRef Name="cartStatusID" />
+    </Key>
+    <Property Name="cartStatusID" Type="int" Nullable="false" />
+    <Property Name="cartStatus" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Tbl_Category">
+    <Key>
+      <PropertyRef Name="categoryID" />
+    </Key>
+    <Property Name="categoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="categoryName" Type="varchar" MaxLength="500" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsDelete" Type="bit" />
+  </EntityType>
+  <EntityType Name="Tbl_MemberRole">
+    <Key>
+      <PropertyRef Name="memberRoleID" />
+    </Key>
+    <Property Name="memberRoleID" Type="int" Nullable="false" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="roleID" Type="int" />
+  </EntityType>
+  <EntityType Name="Tbl_Members">
+    <Key>
+      <PropertyRef Name="memberID" />
+    </Key>
+    <Property Name="memberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="firstName" Type="varchar" MaxLength="200" />
+    <Property Name="lastName" Type="varchar" MaxLength="200" />
+    <Property Name="UserName" Type="varchar" MaxLength="200" />
+    <Property Name="emailID" Type="varchar" MaxLength="200" />
+    <Property Name="password" Type="varchar" MaxLength="500" />
+    <Property Name="confirmPassword" Type="varchar" MaxLength="500" />
+    <Property Name="createdOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tbl_OrdererDetails">
+    <Key>
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="order_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="order_name" Type="varchar" MaxLength="50" />
+    <Property Name="order_phone_no" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="order_add" Type="varchar" MaxLength="100" />
+    <Property Name="date_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tbl_OrderProDetails">
+    <Key>
+      <PropertyRef Name="order_p_id" />
+    </Key>
+    <Property Name="order_p_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="order_id" Type="int" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="order_product" Type="varchar" MaxLength="50" />
+    <Property Name="order_qty" Type="int" />
+    <Property Name="order_price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="order_t_price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="date_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tbl_Product">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="productName" Type="varchar" MaxLength="500" />
+    <Property Name="categoryID" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsDelete" Type="bit" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="modifiedDate" Type="datetime" />
+    <Property Name="productImg" Type="varchar(max)" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="price" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Tbl_Roles">
+    <Key>
+      <PropertyRef Name="roleID" />
+    </Key>
+    <Property Name="roleID" Type="int" Nullable="false" />
+    <Property Name="roleName" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Tbl_ShippingDetails">
+    <Key>
+      <PropertyRef Name="shippingDetailsID" />
+    </Key>
+    <Property Name="shippingDetailsID" Type="int" Nullable="false" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="address" Type="varchar" MaxLength="500" />
+    <Property Name="city" Type="varchar" MaxLength="500" />
+    <Property Name="state" Type="varchar" MaxLength="500" />
+    <Property Name="country" Type="varchar" MaxLength="500" />
+    <Property Name="zipcode" Type="varchar" MaxLength="50" />
+    <Property Name="orderId" Type="int" />
+    <Property Name="amountPaid" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="paymentType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_SlideImage">
+    <Key>
+      <PropertyRef Name="slideID" />
+    </Key>
+    <Property Name="slideID" Type="int" Nullable="false" />
+    <Property Name="slideTitle" Type="varchar" MaxLength="500" />
+    <Property Name="slideImage" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Tbl_UserAccount">
+    <Key>
+      <PropertyRef Name="memberID" />
+    </Key>
+    <Property Name="memberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="firstName" Type="varchar" MaxLength="50" />
+    <Property Name="lastName" Type="varchar" MaxLength="50" />
+    <Property Name="emaiID" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'online_shopping.dbo.DisplayOrders' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DisplayOrders">
+    <Key>
+      <PropertyRef Name="memberID" />
+      <PropertyRef Name="order_p_id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="memberID" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="200" />
+    <Property Name="order_p_id" Type="int" Nullable="false" />
+    <Property Name="order_product" Type="varchar" MaxLength="50" />
+    <Property Name="order_qty" Type="int" />
+    <Property Name="order_price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="order_id" Type="int" Nullable="false" />
+    <Property Name="order_name" Type="varchar" MaxLength="50" />
+    <Property Name="order_phone_no" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="order_add" Type="varchar" MaxLength="100" />
+    <Property Name="date_time" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_OrderProDetails_OrdererDetails">
+    <End Role="Tbl_OrdererDetails" Type="Self.Tbl_OrdererDetails" Multiplicity="0..1" />
+    <End Role="Tbl_OrderProDetails" Type="Self.Tbl_OrderProDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_OrdererDetails">
+        <PropertyRef Name="order_id" />
+      </Principal>
+      <Dependent Role="Tbl_OrderProDetails">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_OrdererDetails_Tbl_Members">
+    <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="0..1" />
+    <End Role="Tbl_OrdererDetails" Type="Self.Tbl_OrdererDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="memberID" />
+      </Principal>
+      <Dependent Role="Tbl_OrdererDetails">
+        <PropertyRef Name="memberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_OrderProDetails_Tbl_Members">
+    <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="0..1" />
+    <End Role="Tbl_OrderProDetails" Type="Self.Tbl_OrderProDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="memberID" />
+      </Principal>
+      <Dependent Role="Tbl_OrderProDetails">
+        <PropertyRef Name="memberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Product_Tbl_Category">
+    <End Role="Tbl_Category" Type="Self.Tbl_Category" Multiplicity="0..1" />
+    <End Role="Tbl_Product" Type="Self.Tbl_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Category">
+        <PropertyRef Name="categoryID" />
+      </Principal>
+      <Dependent Role="Tbl_Product">
+        <PropertyRef Name="categoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_ShippingDetails_Tbl_Members">
+    <End Role="Tbl_Members" Type="Self.Tbl_Members" Multiplicity="0..1" />
+    <End Role="Tbl_ShippingDetails" Type="Self.Tbl_ShippingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Members">
+        <PropertyRef Name="memberID" />
+      </Principal>
+      <Dependent Role="Tbl_ShippingDetails">
+        <PropertyRef Name="memberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="displyOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="online_shoppingModelStoreContainer">
+    <EntitySet Name="Tbl_AdminLogin" EntityType="Self.Tbl_AdminLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Cart" EntityType="Self.Tbl_Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_CartStatus" EntityType="Self.Tbl_CartStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Category" EntityType="Self.Tbl_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_MemberRole" EntityType="Self.Tbl_MemberRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Members" EntityType="Self.Tbl_Members" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_OrdererDetails" EntityType="Self.Tbl_OrdererDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_OrderProDetails" EntityType="Self.Tbl_OrderProDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Product" EntityType="Self.Tbl_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Roles" EntityType="Self.Tbl_Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_ShippingDetails" EntityType="Self.Tbl_ShippingDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_SlideImage" EntityType="Self.Tbl_SlideImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_UserAccount" EntityType="Self.Tbl_UserAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DisplayOrders" EntityType="Self.DisplayOrders" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DisplayOrders].[memberID] AS [memberID], 
+    [DisplayOrders].[UserName] AS [UserName], 
+    [DisplayOrders].[order_p_id] AS [order_p_id], 
+    [DisplayOrders].[order_product] AS [order_product], 
+    [DisplayOrders].[order_qty] AS [order_qty], 
+    [DisplayOrders].[order_price] AS [order_price], 
+    [DisplayOrders].[order_id] AS [order_id], 
+    [DisplayOrders].[order_name] AS [order_name], 
+    [DisplayOrders].[order_phone_no] AS [order_phone_no], 
+    [DisplayOrders].[order_add] AS [order_add], 
+    [DisplayOrders].[date_time] AS [date_time]
+    FROM [dbo].[DisplayOrders] AS [DisplayOrders]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_OrderProDetails_OrdererDetails" Association="Self.FK_OrderProDetails_OrdererDetails">
+      <End Role="Tbl_OrdererDetails" EntitySet="Tbl_OrdererDetails" />
+      <End Role="Tbl_OrderProDetails" EntitySet="Tbl_OrderProDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_OrdererDetails_Tbl_Members" Association="Self.FK_Tbl_OrdererDetails_Tbl_Members">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_OrdererDetails" EntitySet="Tbl_OrdererDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_OrderProDetails_Tbl_Members" Association="Self.FK_Tbl_OrderProDetails_Tbl_Members">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_OrderProDetails" EntitySet="Tbl_OrderProDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Product_Tbl_Category" Association="Self.FK_Tbl_Product_Tbl_Category">
+      <End Role="Tbl_Category" EntitySet="Tbl_Category" />
+      <End Role="Tbl_Product" EntitySet="Tbl_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_ShippingDetails_Tbl_Members" Association="Self.FK_Tbl_ShippingDetails_Tbl_Members">
+      <End Role="Tbl_Members" EntitySet="Tbl_Members" />
+      <End Role="Tbl_ShippingDetails" EntitySet="Tbl_ShippingDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,160 @@
+﻿@model online_shopping.DAL.Tbl_Members
+
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int msg = Convert.ToInt32(@ViewBag.DuplicateMessage);
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<link href="~/Content/Registration.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+    .isa_warning {
+    color:white;
+    background-color: red;
+}
+h4{
+    font-size:25px;
+    color:white;
+    text-shadow:1px 1px 1px #000;
+}
+</style>
+
+@if (TempData["Msg"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Success!</strong>
+        @TempData["Msg"].ToString()
+    </div>
+
+}
+
+
+    @using (Html.BeginForm("Register", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+
+        {
+            @Html.AntiForgeryToken()
+            <body>
+                <div class="main">
+                    <header>
+                        <div class="icon"><img src="~/images/reg.png" /></div>
+                        <h4>Registration </h4>
+                    </header>
+                    <form action="#" method="Post" id="login-box">
+                  
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                      
+                                @Html.ValidationMessageFor(model => model.memberID, "", new { @class = "text-danger" })
+                          <br /><br />
+                         <label for="UserName">First Name</label>
+                                @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "inp" } })
+                                @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger" })
+                            <br /><br />
+                            <label for="UserName">Last Name</label>
+                                @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "inp" } })
+                                @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
+                      <br /><br />
+                            <label for="UserName">User Name</label>
+                                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "inp" } })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                     @if (msg != 0)
+                     {
+                        <div class="isa_warning">
+                            <i class="fa fa-warning"></i>
+                            @ViewBag.DuplicateMessage
+                        </div>
+                     }
+                              <br /><br />
+                            <label for="UserName">Email</label>
+                                @Html.EditorFor(model => model.emailID, new { htmlAttributes = new { @class = "inp", @id = "btnValidate" } })
+                                @Html.ValidationMessageFor(model => model.emailID, "", new { @class = "text-danger" })
+                               <br /><br />
+                            <label for="UserName">Password</label>
+                                @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "inp", @id = "txtPassword" } })
+                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                              <br /><br />
+                            <label for="UserName">Confirm Password</label>
+                                @Html.EditorFor(model => model.confirmPassword, new { htmlAttributes = new { @id = "txtConfirmPass", @class = "inp" } })
+                                @Html.ValidationMessageFor(model => model.confirmPassword, "", new { @class = "text-danger" })
+                                <br /><br />
+
+
+                               <input type="submit" name="submit" value="Submit" class="sub-btn" id="btnSubmit" />
+                    </form>
+                    <a href="@Url.Action("Login","Home")" id="log">Login</a>
+                </div>
+    </body>
+
+
+        }
+
+                    <script>
+                              function validateEmail(sEmail) {
+                                var filter = /^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                                    if (filter.test(sEmail)) {
+                                        return true;
+                                    }
+                                    else {
+                                        return false;
+                                    }
+                                }
+
+                             $(document).ready(function () {
+
+                                    window.setTimeout(function () {
+                               $(".alert").fadeTo(1000, 0).slideUp(1000, function () {
+                                      $(this).remove();
+                                        });
+                                      }, 5000);
+
+
+                                    $('#btnValidate').blur(function () {
+
+                                        debugger
+                                              var sEmail = $('#btnValidate').val();
+                                            if ($.trim(sEmail).length == 0) {
+                                                alert('Please enter valid email address');
+                                                return false;
+                                            }
+                                            if (validateEmail(sEmail)) {
+                                                //alert('Email is valid');
+                                            }
+                                            else {
+                                                alert('Invalid Email Address');
+                                                return false;
+                                            }
+                                        });
+
+
+
+
+                $("#btnSubmit").click(function () {
+                                        debugger
+
+                    if ($("#txtPassword").val() == "") {
+                                            alert("Enter Password");
+                                            return false;
+                                        }
+                                        var conf = $("#txtConfirmPass").val();
+                                        if ($("#txtPassword").val() != conf) {
+                                            alert("Password does not Match");
+                                            return false;
+                                        }
+
+                                    });
+
+
+
+                                });
+        </script>
+
+                @*<div>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>*@
+
+    }
+
+

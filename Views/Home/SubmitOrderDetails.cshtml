@@ -1,0 +1,113 @@
+﻿@model online_shopping.DAL.Tbl_OrdererDetails
+@using online_shopping.Models.Home;
+@{
+    ViewBag.Title = "SubmitOrderDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+    <h2>SubmitOrderDetails</h2>
+@if (Session["UserName"] == null)
+{
+
+
+
+
+}
+else
+{
+    <h3> Please Give Your Shipping Address @Session["UserName"]</h3>
+        if (Session["cart"] == null)
+        {
+
+            <div class="alert alert-danger">
+                <strong>No Product added to Cart</strong>
+            </div>
+        }
+        else
+        {
+
+
+            <table class="table table-bordered">
+
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <td>Price</td>
+                        <td>Total</td>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @{
+                        int finalTotal = 0;
+                    }
+                    @foreach (Item item in (List<Item>)Session["cart"])
+                    {
+                        int Total = Convert.ToInt32(item.Quantity * item.Product.price);
+                        finalTotal = Convert.ToInt32(finalTotal + Total);
+                        <tr>
+                            <td>@item.Product.productName</td>
+                            <td>@item.Quantity</td>
+
+                            <td>@item.Product.price</td>
+                            <td>@Total</td>
+
+
+
+                        </tr>
+
+                    }
+                    
+                    <tr>
+                        <td colspan="4" class="text-right" style="color:green"><b>Final Total : @finalTotal</b> </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+                        }
+
+            <div class="container">
+                @using (Html.BeginForm("SubmitOrderDetails", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+
+                    <div class="form-group">
+
+                        <div class="col-md-10">
+                            <label class="col-md-1">Name</label>
+                            @Html.EditorFor(model => model.order_name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.order_name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="col-md-10">
+                        <label class="col-md-4">Phone Number</label>
+                        @Html.EditorFor(model => model.order_phone_no, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.order_phone_no, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+
+                        <div class="col-md-10">
+                            <label class="col-md-1">Address</label>
+                            @Html.EditorFor(model => model.order_add, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.order_add, "please input address", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <a class="btn btn-success" href=../Home/ViewOrderConfirm><input type="submit"  value="Confirm Shopping" class="btn btn-default" /></a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+
+                }
+            </div>
+
+                        }

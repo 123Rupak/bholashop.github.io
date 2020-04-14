@@ -1,0 +1,37 @@
+﻿@model online_shopping.DAL.Tbl_Members
+
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+<link href="~/Content/Login.css" rel="stylesheet" />
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <body>
+        <div class="main">
+            <header>
+                <div class="icon"><img src="~/images/Login.png" /></div>
+                <h4>Login</h4>
+            </header>
+            <form action="#" method="Post" id="login-box">
+              <label for="UserName">UserName</label>
+                @Html.TextBoxFor(model => model.firstName, new { @placeholder = "Enter UserName", @class = "inp"})
+                @Html.ValidationMessageFor(model => model.firstName, "", new { @placeholder="Enter UserName", @class = "text-danger" })
+                <br /><br />
+                <label for="Password">Password</label>
+                @Html.TextBoxFor(model => model.password, new { @placeholder = "Enter Password", @class = "inp" })
+                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                <br /><br />
+                <input type="submit" name="submit" value="Login" class="sub-btn" />
+            </form>
+            <a href="#" id="forgot">Forgot Password</a>
+            <a href="@Url.Action("Register","Home")" id="reg">Registration</a>
+        </div>
+    </body>
+          
+}
+
+

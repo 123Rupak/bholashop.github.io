@@ -1,0 +1,138 @@
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\csc.exe
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\System.Collections.Immutable.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\vbc.exe
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\VBCSCompiler.exe
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\roslyn\VBCSCompiler.exe.config
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\online shopping.dll.config
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\online shopping.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\online shopping.pdb
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Antlr3.Runtime.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\EntityFramework.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\EntityFramework.SqlServer.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Google.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Web.Infrastructure.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Newtonsoft.Json.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Owin.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Helpers.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Mvc.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Optimization.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Razor.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.WebPages.Deployment.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.WebPages.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.WebPages.Razor.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\WebGrease.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Helpers.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Mvc.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Optimization.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.Razor.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.WebPages.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.WebPages.Deployment.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\System.Web.WebPages.Razor.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Antlr3.Runtime.pdb
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Newtonsoft.Json.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\EntityFramework.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\EntityFramework.SqlServer.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Google.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\obj\Debug\online shopping.csprojResolveAssemblyReference.cache
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\obj\Debug\online shopping.dll
+c:\users\rupak\documents\visual studio 2015\Projects\online shopping\online shopping\obj\Debug\online shopping.pdb
+E:\online shopping\online shopping\bin\roslyn\csc.exe
+E:\online shopping\online shopping\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\online shopping\online shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\online shopping\online shopping\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\online shopping\online shopping\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\online shopping\online shopping\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\online shopping\online shopping\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\online shopping\online shopping\bin\roslyn\System.Collections.Immutable.dll
+E:\online shopping\online shopping\bin\roslyn\System.Reflection.Metadata.dll
+E:\online shopping\online shopping\bin\roslyn\vbc.exe
+E:\online shopping\online shopping\bin\roslyn\VBCSCompiler.exe
+E:\online shopping\online shopping\bin\roslyn\VBCSCompiler.exe.config
+E:\online shopping\online shopping\bin\online shopping.dll.config
+E:\online shopping\online shopping\bin\online shopping.dll
+E:\online shopping\online shopping\bin\online shopping.pdb
+E:\online shopping\online shopping\bin\Antlr3.Runtime.dll
+E:\online shopping\online shopping\bin\EntityFramework.dll
+E:\online shopping\online shopping\bin\EntityFramework.SqlServer.dll
+E:\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Core.dll
+E:\online shopping\online shopping\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\online shopping\online shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Cookies.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Facebook.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Google.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.OAuth.dll
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Twitter.dll
+E:\online shopping\online shopping\bin\Microsoft.Web.Infrastructure.dll
+E:\online shopping\online shopping\bin\Newtonsoft.Json.dll
+E:\online shopping\online shopping\bin\Owin.dll
+E:\online shopping\online shopping\bin\System.Web.Helpers.dll
+E:\online shopping\online shopping\bin\System.Web.Mvc.dll
+E:\online shopping\online shopping\bin\System.Web.Optimization.dll
+E:\online shopping\online shopping\bin\System.Web.Razor.dll
+E:\online shopping\online shopping\bin\System.Web.WebPages.Deployment.dll
+E:\online shopping\online shopping\bin\System.Web.WebPages.dll
+E:\online shopping\online shopping\bin\System.Web.WebPages.Razor.dll
+E:\online shopping\online shopping\bin\WebGrease.dll
+E:\online shopping\online shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\online shopping\online shopping\bin\System.Web.Helpers.xml
+E:\online shopping\online shopping\bin\System.Web.Mvc.xml
+E:\online shopping\online shopping\bin\System.Web.Optimization.xml
+E:\online shopping\online shopping\bin\System.Web.Razor.xml
+E:\online shopping\online shopping\bin\System.Web.WebPages.xml
+E:\online shopping\online shopping\bin\System.Web.WebPages.Deployment.xml
+E:\online shopping\online shopping\bin\System.Web.WebPages.Razor.xml
+E:\online shopping\online shopping\bin\Antlr3.Runtime.pdb
+E:\online shopping\online shopping\bin\Newtonsoft.Json.xml
+E:\online shopping\online shopping\bin\EntityFramework.xml
+E:\online shopping\online shopping\bin\EntityFramework.SqlServer.xml
+E:\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Core.xml
+E:\online shopping\online shopping\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\online shopping\online shopping\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Facebook.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Cookies.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.OAuth.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Google.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.Twitter.xml
+E:\online shopping\online shopping\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\online shopping\online shopping\obj\Debug\online shopping.csprojResolveAssemblyReference.cache
+E:\online shopping\online shopping\obj\Debug\online shopping.dll
+E:\online shopping\online shopping\obj\Debug\online shopping.pdb

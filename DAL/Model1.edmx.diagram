@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="053bae48a16646b2821ca0d91e8f2ca6" Name="Diagram1">
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_Cart" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_CartStatus" Width="1.5" PointX="0.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_Category" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_Roles" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_ShippingDetails" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_SlideImage" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_Product" Width="1.5" PointX="3" PointY="1.125" />
+        <AssociationConnector Association="online_shoppingModel.FK_Tbl_Cart_Tbl_Product" />
+        <AssociationConnector Association="online_shoppingModel.FK_Tbl_Product_Tbl_Category" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_OrdererDetails" Width="1.5" PointX="5.25" PointY="10.5" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_OrderProDetails" Width="1.5" PointX="2.5" PointY="10.25" />
+        <AssociationConnector Association="online_shoppingModel.FK_OrderProDetails_OrdererDetails" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_MemberRole" Width="1.375" PointX="7.375" PointY="0.625" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_Members" Width="1.5" PointX="0.75" PointY="7.25" />
+        <AssociationConnector Association="online_shoppingModel.FK_Tbl_ShippingDetails_Tbl_Members" />
+        <AssociationConnector Association="online_shoppingModel.FK_Tbl_OrdererDetails_Tbl_Members" />
+        <AssociationConnector Association="online_shoppingModel.FK_Tbl_OrderProDetails_Tbl_Members" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_UserAccount" Width="1.5" PointX="9.375" PointY="0.75" />
+        <EntityTypeShape EntityType="online_shoppingModel.DisplayOrder" Width="1.5" PointX="8.375" PointY="6.75" />
+        <EntityTypeShape EntityType="online_shoppingModel.Tbl_AdminLogin" Width="1.5" PointX="10.375" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
